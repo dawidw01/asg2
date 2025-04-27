@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Blocky Animal</title>
+</head>
+
+<body onload="main()">
+  
+  <p style="font-size: 24px;"> Orangutan </p>
+  
+  <div style="display: flex; align-items: flex-start; gap: 20px;">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+  </div>
+
+  <p id="numdot"> Stats </p>
+
+  <br><br>
+  <p id="pokeText" style="font-size: 24px; color: red; display: none;">POKE!</p>
+
+  <br><br>
+  <p style="display: inline;">
+    Camera Angle <input type="range" min="0" max="90" value="5" class="slider" id="angleSlide">
+  </p>
+
+  <p>
+    Upper Arm Slider <input type="range" min="-45" max="90" value="45" class="slider" id="upperArmSlide">
+    Animation:
+    <button type="button" id="animationUpperArmOnButton">ON</button>
+    <button type="button" id="animationUpperArmOffButton">OFF</button>
+  </p>
+
+  <p>
+    Lower Arm Slider <input type="range" min="-30" max="30" value="0" class="slider" id="lowerArmSlide">
+    Animation:
+    <button type="button" id="animationLowerArmOnButton">ON</button>
+    <button type="button" id="animationLowerArmOffButton">OFF</button>
+  </p>
+
+  <p>
+    Global Animation:
+    <button type="button" id="animationGlobalOnButton">ON</button>
+    <button type="button" id="animationGlobalOffButton">OFF</button>
+  </p>
+
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../lib/cuon-matrix.js"></script>
+  <script src="BlockyAnimal.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Pentagon.js"></script>
+</body>
+
+</html>
